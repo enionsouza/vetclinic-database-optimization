@@ -14,34 +14,10 @@
 
 ## About
 
-In this project, our goal was to perform a PostgreSQL Database Optimization using VetClinic Database, whose original scripts have been provided by Microverse. Below, we present an ERD representation of the provided database schema:
+In this project, our goal was to perform a PostgreSQL Database Optimization using VetClinic Database, whose original scripts have been provided by Microverse.
+
+Below, we present an ERD representation of the provided database schema:
 ![ERD](./screenshots/vetclinic_db.png)
-
-Below, we present some screenshots of the execution output.
-
-#### 'visits' table execution performance before `animal_index` optimization:
-
-<img style="border: 1px solid black;" src="./screenshots/animal_index_before.PNG" width="700" alt="visits table before animal_index">
-
-#### 'visits' table execution performance after `animal_index` optimization:
-
-<img style="border: 1px solid black;" src="./screenshots/animal_index_after.PNG" width="700" alt="visits table after animal_index">
-
-#### 'visits' table execution performance before `vet_index` optimization:
-
-<img style="border: 1px solid black;" src="./screenshots/vet_index_before.PNG" width="700" alt="visits table before vet_index">
-
-#### 'visits' table execution performance after `vet_index` optimization:
-
-<img style="border: 1px solid black;" src="./screenshots/vet_index_after.PNG" width="700" alt="visits table after vet_index">
-
-#### 'owners' table execution performance before `owners_index` optimization:
-
-<img style="border: 1px solid black;" src="./screenshots/owners_index_before.PNG" width="700" alt="visits table before owners_index">
-
-#### 'owners' table execution performance after `owners_index` optimization:
-
-<img style="border: 1px solid black;" src="./screenshots/owners_index_after.PNG" width="700" alt="visits table after owners_index">
 
 ## Built With
 
