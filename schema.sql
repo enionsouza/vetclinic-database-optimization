@@ -52,3 +52,9 @@ INSERT INTO visits (animal_id, vet_id, date_of_visit) SELECT * FROM (SELECT id F
 
 -- This will add 2.500.000 owners with full_name = 'Owner <X>' and email = 'owner_<X>@email.com' (~2min approx.)
 insert into owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
+
+-- Use EXPLAIN ANALYZE on QUERY#1 (SELECT COUNT(*) FROM visits where animal_id = 4)
+-- vetclinic=# explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;
+
+-- Find a way to decrease the execution time of the first query.
+CREATE INDEX animal_index ON visits(animal_id);
