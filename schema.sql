@@ -58,3 +58,6 @@ insert into owners (full_name, email) select 'Owner ' || generate_series(1,25000
 
 -- Find a way to decrease the execution time of the first query.
 CREATE INDEX animal_index ON visits(animal_id);
+
+CREATE INDEX vet_index ON visits (vet_id);
+CREATE INDEX owners_index ON lower(email);
